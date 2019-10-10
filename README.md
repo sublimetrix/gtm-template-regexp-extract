@@ -11,7 +11,7 @@ Extract a part of a string faster by using the regular expression group syntax.
 
 ### User email
 
-If an email is valentin@sublimetrix.com
+Example source: valentin@sublimetrix.com
 
 |Variable name|Extraction source|Regular expression|Extraction group|Return|
 | ---- | ---- | ---- | ---- | ---- |
@@ -20,7 +20,7 @@ If an email is valentin@sublimetrix.com
 
 ### Date from a string
 
-If the string is Article published the August 19th 2020
+Example source: Article published the August 19th 2020
 
 |Variable name|Extraction source|Regular expression|Extraction group|Return|
 | ---- | ---- | ---- | ---- | ---- |
