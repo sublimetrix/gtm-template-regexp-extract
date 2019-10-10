@@ -11,12 +11,12 @@ Extract a part of a string faster by using the regular expression group syntax.
 
 ### User email
 
-Example source: valentin@sublimetrix.com
+Example source: erwin.schrodinger@gmail.com
 
 |Variable name|Extraction source|Regular expression|Output group|Return|
 | ---- | ---- | ---- | ---- | ---- |
-|User name|{{User Email}}|(.+)@(.+)|Group 1|valentin|
-|Email provider|{{User Email}}|(.+)@(.+)|Group 2|sublimetrix.com|
+|User name|{{User Email}}|(.+)@(.+)|Group 1|erwin.schrodinger|
+|Email provider|{{User Email}}|(.+)@(.+)|Group 2|gmail.com|
 
 ### Date from a string
 
