@@ -1,4 +1,11 @@
 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+```
+
 # Regex Extract
 
 
@@ -15,7 +22,7 @@ Example source: erwin.schrodinger@gmail.com
 
 |Variable name|Extraction source|Regular expression|Output group|Return|
 | ---- | ---- | ---- | ---- | ---- |
-|User name|{{User Email}}|(.+)@(.+)|Group 1|erwin.schrodinger|
+|User name|{{User Email}}|!(.+)@(.+)|Group 1|erwin.schrodinger|
 |Email provider|{{User Email}}|(.+)@(.+)|Group 2|gmail.com|
 
 ### Date from a string
