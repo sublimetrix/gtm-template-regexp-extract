@@ -2,8 +2,4 @@ homepage: "http://sublimetrix.com"
 versions:
   # Last version
   - sha: c570b8e506ccdc781b05098d3f544e5859509f47
-    changesNotes: Update Yaml
-
-  # Older versions
-  - sha: 3eb5f1a46bd6c57011137b5efb8652a2938ac179
-  changesNotes: Initial Version
+    changesNotes: Initial Version
