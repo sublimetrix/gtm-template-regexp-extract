@@ -1,6 +1,6 @@
 homepage: "http://sublimetrix.com"
+documentation: "https://www.example.com/documentation"
 versions:
-  # Last version
   - sha: 1c3cd877e14dc3ac3a120a55eab9c319f2bc1a5d
-  changesNotes: Initial Version
+    changeNotes: Initial Version
 
