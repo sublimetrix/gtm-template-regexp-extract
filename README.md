@@ -1,5 +1,7 @@
 # Regex Extract
 
+note: .*(\([^\(\)]+\)).*
+
 ## Description
 
 ...
