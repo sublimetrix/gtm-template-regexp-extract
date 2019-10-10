@@ -3,7 +3,7 @@
 
 ## Description
 
-Extract a part of a string faster by using the regular expression group syntax.
+Extract a part of a string faster by using the regular expression group syntax with parentheses.
 
 
 ## Example
