@@ -10,7 +10,9 @@ Extract a part of a string faster by using the regular expression group syntax.
 ## Example
 
 ### User email
+
 If an email is valentin@sublimetrix.com
+
 |Variable name|Extraction source|Regular expression|Extraction group|Return|
 | ---- | ---- | ---- | ---- | ---- |
 |User name|{{User Email}}|(.+)@(.+)|Group 1|valentin|
