@@ -18,9 +18,7 @@ ___INFO___
   "containerContexts": [
     "WEB"
   ],
-  "brand": {
-    "displayName": "Custom Template"
-  }
+  "brand": {}
 }
 
 
@@ -28,9 +26,9 @@ ___TEMPLATE_PARAMETERS___
 
 [
   {
-    "type": "LABEL",
+    "displayName": "Documentation : https://github.com/sublimetrix/gtm-template-regexp-extract",
     "name": "documentation",
-    "displayName": "Documentation : https://github.com/sublimetrix/gtm-template-regexp-extract"
+    "type": "LABEL"
   },
   {
     "valueValidators": [
@@ -114,43 +112,23 @@ ___TEMPLATE_PARAMETERS___
 ]
 
 
-___WEB_PERMISSIONS___
-
-[
-  {
-    "instance": {
-      "key": {
-        "publicId": "logging",
-        "versionId": "1"
-      },
-      "param": [
-        {
-          "key": "environments",
-          "value": {
-            "type": 1,
-            "string": "debug"
-          }
-        }
-      ]
-    },
-    "isRequired": true
-  }
-]
-
-
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
-// Enter your template code here.
-const log = require('logToConsole');
-log('data =', data);
+//const log = require('logToConsole');
+//log('data =', data);
 
 const entry = data.entry;
 const regex = data.regex;
 let group = data.group;
 group = 'custom' == group ? data.custom : group;
 
-// Variables must return a value.
-return entry.match(regex)[group];
+let result;
+const match = entry.match(regex);
+if (null != match) {
+  result = entry.match(regex)[group];
+}
+
+return result;
 
 
 ___NOTES___
@@ -164,3 +142,4 @@ Date: 2019.10.10
 Change Log:
 1.0.0: Initial Version
 1.1.0: Add documentation link
+1.1.1: Fix boolean issue + remove log requirement
