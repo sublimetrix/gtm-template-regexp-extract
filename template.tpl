@@ -28,6 +28,11 @@ ___TEMPLATE_PARAMETERS___
 
 [
   {
+    "type": "LABEL",
+    "name": "documentation",
+    "displayName": "Documentation : https://github.com/sublimetrix/gtm-template-regexp-extract"
+  },
+  {
     "valueValidators": [
       {
         "type": "NON_EMPTY"
@@ -41,11 +46,11 @@ ___TEMPLATE_PARAMETERS___
   {
     "valueValidators": [
       {
-        "type": "REGEX",
         "args": [
           ".*\\(.+\\).*"
         ],
-        "errorMessage": "Enter a regular expression containing one or more groups in parentheses."
+        "errorMessage": "Enter a regular expression containing one or more groups in parentheses.",
+        "type": "REGEX"
       }
     ],
     "displayName": "Regular expression",
@@ -87,10 +92,6 @@ ___TEMPLATE_PARAMETERS___
     "type": "SELECT",
     "subParams": [
       {
-        "type": "TEXT",
-        "name": "custom",
-        "displayName": "Custom group number",
-        "simpleValueType": true,
         "valueValidators": [
           {
             "type": "PERCENTAGE"
@@ -99,10 +100,14 @@ ___TEMPLATE_PARAMETERS___
         "enablingConditions": [
           {
             "paramName": "group",
-            "paramValue": "custom",
-            "type": "EQUALS"
+            "type": "EQUALS",
+            "paramValue": "custom"
           }
-        ]
+        ],
+        "displayName": "Custom group number",
+        "simpleValueType": true,
+        "name": "custom",
+        "type": "TEXT"
       }
     ]
   }
@@ -155,3 +160,7 @@ Version: 1.0.0
 Author: Sublimetrix
 Date: 2019.10.10
 /*******************/
+
+Change Log:
+1.0.0: Initial Version
+1.1.0: Add documentation link
