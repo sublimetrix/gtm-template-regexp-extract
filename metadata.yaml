@@ -4,6 +4,6 @@ versions:
   - sha: 779892a8757a8d3d88cd95f1d54ad0847657032a
     changeNotes: Add documentation link
     
-  #Older versions
+  # Older versions
     - sha: e1bfab1ebf0cb708c913923a362ab65bc0a81d7f
     changeNotes: Initial Version
