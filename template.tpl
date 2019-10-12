@@ -122,10 +122,19 @@ const regex = data.regex;
 let group = data.group;
 group = 'custom' == group ? data.custom : group;
 
+if ('undefined' == typeof entry) return undefined;
+if ('undefined' == entry) return undefined;
+
 let result;
 const match = entry.match(regex);
-if (null != match) {
-  result = entry.match(regex)[group];
+
+switch (match) {
+  case null:
+    result = undefined;
+    break;
+  default:
+    result = match[group];
+    break;
 }
 
 return result;
